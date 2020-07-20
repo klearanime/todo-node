@@ -1,5 +1,24 @@
 # Todo - Node Version
 
+### How Our Interface Looks
+
+Adding a todo:
+
+![screenshot of the add todo interface in action](./assets/todo-node-add.png)
+
+Removing a todo:
+
+![screenshot of the remove todo interface in action](./assets/todo-node-remove.png)
+
+Marking a todo complete:
+
+![screenshot of the mark todo complete interface in action](./assets/todo-node-complete.png)
+
+Marking a todo uncomplete:
+
+![screenshot of the mark todo uncomplete interface in action](./assets/todo-node-uncomplete.png)
+
+
 ### Workflow
 
 Create a `main.js` file and work ENTIRELY in there. As your code changes the CSV file, feel free to change it back manually with VS Code. Making a backup copy (or just re-downloading it from GitHub) may be a good idea.
