@@ -18,6 +18,10 @@ Marking a todo uncomplete:
 
 ![screenshot of the mark todo uncomplete interface in action](./assets/todo-node-uncomplete.png)
 
+Quitting:
+
+![screenshot of quitting in action](./assets/todo-node-quit.png)
+
 
 ### Workflow
 
