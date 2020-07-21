@@ -90,7 +90,9 @@ Pass the `menu` variable that holds that string into `interface.question`, and t
 
 * We have a callback that runs when node gets the user's input on what menu option to take, but we need to be able to follow up and say, okay, what todo do you want to add/remove/mark? We're getting far beyond taking in arguments through `process.argv` now!
 * What we can do is make another function, call it `add`, that will add the todo that the user types in. When the user has typed in `1`, right there in the `if` logic, run the `question` method again. This time, we'll ask our followup question, and once they've answered it, `node` will call our (so far hypothetical) `add` function. Pass in a string asking the user what to put on their todo list as the first parameter, and then pass our `add` function as the second.
-* Okay, let's make our `add` function. Once the user types their todo in, `node` will pass that string to this function. This function will be pretty simple so far: add that todo text as the first element of a new array, with `uncomplete` as the second. Then push that array into our todos array, and run `displayTodos`. Run your app, answer the followup question, and see if it prints it!
+* Okay, let's make our `add` function. Once the user types their todo in, `node` will pass that string to this function. This function will be pretty simple so far: add that todo text as the first element of a new array, with `uncomplete` as the second. Then push that array into our todos array, and run `displayTodos`. 
+**NOTE: we failed to say in the original version of this README that we now need to move the `interface.close()` call down to the bottom of this function. The key is that we close the input/output UI process only once we're entirely done taking input from the user, and we're only absolutely done with that in our callback functions.**
+* Run your app, answer the followup question, and see if it prints it!
 * But check your `csv`. The new todo didn't get in there! We only changed our array, and when we hit the bottom of our code and exit our app, that array is gone. Next: saving it.
 
 
