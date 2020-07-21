@@ -120,3 +120,4 @@ That's most of the work if you have the preceding functions. To get the ability 
 
 * Make it pretty. Make sure there are spaces or newlines between your question and the user's answer, and newline spacing between logical sections of text, like your menu and your printing of the todos.
 * Add the ability to delete all completed todos. This is not easy, but it's essentially a filter operation, making a new array that doesn't include the ones where the status is `complete`. At that point, the simplest way to update it is to change our global todos array to be that new, smaller array, declaring our array with `let` so we can reassign it.
+* Sort your array by completeness, with uncomplete things at the top. Look into `.sort`, which uses callbacks to tell it how to sort your array. If you can do this one, you'll learn a lot.
